@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import {
+  SidebarProvider,
+  SidebarTrigger,
+} from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 
 export const metadata: Metadata = {
@@ -20,11 +23,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <SidebarProvider>
+          <SidebarTrigger className="fixed top-6 left-3 z-50 rounded-full" />
           <AppSidebar />
-          <main>
-            <SidebarTrigger />
-            {children}
-          </main>
+          <main className="p-3">{children}</main>
         </SidebarProvider>
       </body>
     </html>

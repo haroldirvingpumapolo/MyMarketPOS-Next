@@ -276,7 +276,7 @@ function SidebarTrigger({
       {open ? (
         <CircleX className="w-6! h-6!" />
       ) : (
-        <PanelLeftIcon className="w-5! h-5!" />
+        <PanelLeftIcon className="w-6! h-6!" />
       )}
       <span className="sr-only">Toggle Sidebar</span>
     </Button>

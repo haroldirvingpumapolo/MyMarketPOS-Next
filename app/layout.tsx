@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <SidebarProvider>
-          <SidebarTrigger className="fixed top-6 left-3 z-50 rounded-full" />
+          <SidebarTrigger className="fixed top-5 left-2 z-50 rounded-full" />
           <AppSidebar />
           <main className="m-5 mx-4 w-full">{children}</main>
         </SidebarProvider>
